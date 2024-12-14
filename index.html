@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Coefficient</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Binomial Coefficient</h1>
+        <p>The binomial coefficient, also known as the "\(\binom{n}{k}\)" or "nCr" formula, is used to determine the number of ways to choose k items from a set of n items without regard to the order of selection. It is a fundamental concept in combinatorics and probability theory.</p>
+        <p>The formula for the binomial coefficient is given by:</p>
+        <p>\[ \binom{n}{k} = \frac{n!}{k!(n-k)!} \]</p>
+        <p>Where:</p>
+        <p>\(n\) is the total number of items</p>
+        <p>\(k\) is the number of items to choose</p>
+        <p>\(n!\) (n factorial) is the product of all positive integers up to n</p>
+        <p>\(k!\) (k factorial) is the product of all positive integers up to k</p>
+        <p>\((n-k)!\) (\((n-k)\) factorial) is the product of all positive integers up to \((n-k)\)</p>
+
+        <h2>Enter the values of n and k:</h2>
+        <input type="number" id="n" placeholder="n">
+        <input type="number" id="k" placeholder="k">
+        <button id="calculate">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
