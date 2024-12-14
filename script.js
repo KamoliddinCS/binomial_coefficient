@@ -23,6 +23,14 @@ document.getElementById("calculate").addEventListener("click", function() {
     document.getElementById("result").innerHTML = `C(${n},${k}) = ${result}`;
 });
 
+// Instant calculate button
+document.getElementById("instant").addEventListener("click", function() {
+    let n = parseInt(document.getElementById("n").value);
+    let k = parseInt(document.getElementById("k").value);
+    let result = binomialCoefficient(n, k);
+    document.getElementById("result").innerHTML = `C(${n},${k}) = ${result}`;
+});
+
 function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;
@@ -98,7 +106,7 @@ function visualizeBinomialCalculation(n, k) {
     }
 
     let currentRow = 0;
-    let animationDelay = 100; // Delay between rows in milliseconds
+    let animationDelay = 10; // Delay between rows in milliseconds
 
     // Animation function
     function animate() {
